@@ -1,0 +1,82 @@
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Gravity Group RSA</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#" {{on "click" (fn this.transitionTo "index")}}>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" {{on "click" (fn this.transitionTo "courier-services")}}>Courier Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" {{on "click" (fn this.transitionTo "roadside-assist")}}>Roadside Assist</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<section id="nav-cover">
+  <div class="row main-section">
+    <div class="col-xs-12 col-md-9 left-side-banner">
+      <div>
+        <h4>24/7 Roadside &amp; Courier Services. Call us <a class="text-white no-underline" href="tel:082 630 0543">082 630 0543</a> | 
+        <a class="text-white no-underline" href="https://wa.me/+27790963817">079 096 3817</a></h4>
+      </div>
+      <div class="main-heading-2">
+        <h1 class="text-gravityred">Gravity Group RSA</h1>
+        <br>
+        <h4 class="text-gravityblue offset">Courier Services</h4>
+        <h4 class="text-gravityblue offset">Roadside Assist</h4>
+
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3 right-side-banner">
+      <div class="main-heading row">
+        <h4>
+          <i class="bi bi-envelope-at"></i>
+          irishm@ggrsa.co.za | admin@ggrsa.co.za
+        </h4>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row main-section-footer">
+      <div class="col-xs-12 col-md-3 border-light">
+        <i class="bi bi-truck-flatbed float-end font-40"></i>
+        Towing <br>
+        24/7
+      </div>
+      <div class="col-xs-12 col-md-3 border-light">
+        <i class="bi bi-shield-lock float-end font-40"></i>
+        Locksmith <br>
+        24/7
+      </div>
+      <div class="col-xs-12 col-md-3 border-light">
+        <i class="bi bi-lightning-charge float-end font-40"></i>
+        Jumpstart/Battery Sales &amp; Delivery <br>
+        24/7
+      </div>
+      <div class="col-xs-12 col-md-3">
+        <i class="bi bi-truck float-end font-40"></i>
+        Courier Services <br>
+        24/7
+      </div>
+    </div>
+  </div>
+</section>
+{{outlet}}
+
+<footer class="text-center">
+  <p>
+    Gravity 24/7 | All Rights Reserved &copy; {{this.currentYear}}
+  </p>
+</footer>

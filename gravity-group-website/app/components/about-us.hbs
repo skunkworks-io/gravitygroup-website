@@ -1,0 +1,141 @@
+<div class="row mb-4 mt-4">
+  <div class="col-xs-12 col-md-5 image-about-us">
+  </div>
+  <div class="col-xs-12 col-md-5">
+    {{#if (eq this.selectedOption "courier")}}
+      <h1 class="text-white">
+        <span class="font-40">Courier Services <strong>WE OFFER</strong></span> <br>
+        <button class="btn btn-gr mt-4" type="button" {{on "click" (fn this.toggleList "roadside")}}>
+          Roadside Assist
+        </button>
+        <button class="btn btn-gr mx-1 mt-4" type="button" {{on "click" (fn this.toggleList "courier")}}>
+          Courier Services
+        </button>
+      </h1>
+      <p class="p-2 text-white">
+        We provide general transport services for various kinds of goods and we're able to pick you up quickly in Gauteng, Limpopo, Mpumalanga and North West.
+
+        <ul class="list-group list-group-flush mt-2">
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Logistics</span>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Overnight courier</span>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Distribution</span><br>
+            <ul class="no-style">
+              <li>*Storage &amp; Packaging</li>
+            </ul>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">24hrs emergency transport</span>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Load transfer</span>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Container transport</span>
+            <ul class="no-style">
+              <li>*Forklift</li>
+              <li>*Bobcat</li>
+            </ul>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Stuff transport and shuttle services</span>
+          </li>
+        </ul>
+      </p>
+    {{else if (eq this.selectedOption "roadside")}}
+      <h1 class="text-white">
+        <span class="font-40">Roadside <strong>Assist</strong></span> <br>
+        <button class="btn btn-gr mt-4" type="button" {{on "click" (fn this.toggleList "roadside")}}>
+          Roadside Assist
+        </button>
+        <button class="btn btn-gr mx-1 mt-4" type="button" {{on "click" (fn this.toggleList "courier")}}>
+          Courier Services
+        </button>
+      </h1>
+      <p class="p-2 text-white">
+        We provide general roadside assistance in the event of an unexpected emergency and we're able to get to you quickly in Gauteng, Limpopo, Mpumalanga and North West.
+
+        <ul class="list-group list-group-flush mt-2">
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Flat tyre assist and spare wheel supply for various vehicles</span>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Fuel supply for light and heavy vehicles</span>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Vehicles, home and office locksmith</span>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Battery services and supply</span>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Towing services for long-short distances</span><br>
+            <ul class="no-style">
+              <li>*Guardian angel/Roadside security</li>
+              <li>*Recovery</li>
+              <li>*Sling tow</li>
+              <li>*Flatbed towing</li>
+              <li>*Heavy duty towing</li>
+              <li>*Cross border</li>
+              <li>*Storage facilities</li>
+            </ul>
+          </li>
+        </ul>
+      </p>
+    {{else}}
+      <h1 class="text-white">
+        <span class="font-40">WHAT <strong>WE OFFER</strong></span> <br>
+        <button class="btn btn-gr mt-4" type="button" {{on "click" (fn this.toggleList "roadside")}}>
+          Roadside Assist
+        </button>
+        <button class="btn btn-gr mx-1 mt-4" type="button" {{on "click" (fn this.toggleList "courier")}}>
+          Courier Services
+        </button>
+      </h1>
+      <span class="font-14 p-2 text-white">EFFECTIVE TRANSPORTATION</span>
+      <p class="p-2 text-white">
+        We provide fast, courteous and inexpensive towing services in SA. We are fully insured and been in business since 2014. We are ready to respond to all your 
+        vehicle emergency needs 24 hours a day, seven days a week.
+
+        <ul class="list-group list-group-flush mt-2">
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">More than <span class="bold">10 years of experience</span></span>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Short arrival time of <span class="bold">30 minutes or less*</span></span>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Honest competitive prices - <span class="bold">zero hidden fees</span></span>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Friendly and <span class="bold">professional service</span></span>
+          </li>
+          <li class="list-group-item text-white">
+            <i class="float-start bi bi-check-circle text-gravity-green"></i>
+            <span class="mx-2">Available <span class="bold">24 hours</span> a day, <span class="bold">7 days</span> a week</span>
+          </li>
+        </ul>
+      </p>
+    {{/if}}
+  </div>
+</div>
